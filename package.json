@@ -5,7 +5,8 @@
     "start": "npm run dev",
     "dev": "fkill :3000 -s && npm run frontend",
     "frontend": "webpack serve --open",
-    "test": "cross-env NODE_ENV=testing jest --watchAll --verbose --forceExit"
+    "test": "cross-env NODE_ENV=testing jest --watchAll --verbose --forceExit",
+    "build": "webpack --mode production"
   },
   "devDependencies": {
     "@babel/core": "7.17.5",
