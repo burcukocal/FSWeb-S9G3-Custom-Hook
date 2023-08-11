@@ -26,7 +26,7 @@ const config = {
   output: {
     filename: BUNDLE_FILE,
     publicPath: '/',
-    path: path.resolve(__dirname, DIST_FOLDER),
+    path: path.resolve(__dirname, 'dist'),
   },
   devtool: SOURCE_MAP,
   plugins: [
@@ -35,7 +35,7 @@ const config = {
     }),
   ],
   devServer: {
-    static: path.join(__dirname, DIST_FOLDER),
+    static: path.join(__dirname, 'dist'),
     historyApiFallback: true,
     compress: true,
     port: FRONTEND_PORT,
@@ -65,3 +65,4 @@ const config = {
 }
 
 module.exports = config
+
